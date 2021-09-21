@@ -1,6 +1,13 @@
 {
   "name": "Portfolio",
   "version": "1.0.0",
+  "keywords": [
+    "Potfolio",
+    "Tailwindcss",
+    "Postcss",
+    "Parcel"
+  ],
+  "description": "My personal website - Using Parcel as a bundler tool and tailwindcss a css framework",
   "source": "src/index.html",
   "repository": "https://github.com/ahmadXtn/Portfolio.git",
   "author": "Ahmed bouazizi <56606377+ahmadXtn@users.noreply.github.com>",
