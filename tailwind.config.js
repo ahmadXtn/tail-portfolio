@@ -16,5 +16,7 @@ module.exports = {
 		extend: {},
 	},
 	plugins: [],
-	corePlugins: {},
+	corePlugins: {
+		backgroundColor: false,
+	},
 }
