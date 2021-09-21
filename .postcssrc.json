@@ -1,0 +1,13 @@
+{
+  "plugins": {
+    "postcss-import": {},
+    "postcss-nesting": {
+      "tailwindcss/nesting": {}
+    },
+    "postcss-url": {},
+    "postcss-custom-properties": {},
+    "tailwindcss": {},
+    "postcss-glitch": {},
+    "autoprefixer": {}
+  }
+}
