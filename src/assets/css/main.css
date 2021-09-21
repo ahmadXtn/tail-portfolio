@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body{
-    background: #000;
+    @apply bg-gray-200 border-2 border-red-400
 }
