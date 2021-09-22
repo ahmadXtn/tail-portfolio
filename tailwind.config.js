@@ -17,6 +17,6 @@ module.exports = {
 	},
 	plugins: [],
 	corePlugins: {
-		backgroundColor: false,
+		backgroundColor: true,
 	},
 }
