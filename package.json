@@ -13,15 +13,17 @@
   "author": "Ahmed bouazizi <56606377+ahmadXtn@users.noreply.github.com>",
   "license": "MIT",
   "private": true,
-  "config" : { "port" : "4111" },
+  "config": {
+    "port": 4123
+  },
   "scripts": {
     "clean": "npx rimraf -rf dist .parcel-cache",
     "clean:build": "npx rimraf -rf build",
-    "parcel:serve": "parcel serve ./src/index.html --no-cache -p 1234",
-    "parcel:build": "parcel build ./src/index.html --dist-dir build",
+    "parcel:serve": "parcel serve ./src/index.html -p %npm_package_config_port% --no-cache",
+    "parcel:build": "cross-env NODE_ENV=production parcel build ./src/index.html --dist-dir build",
     "start": "npm-run-all -s clean parcel:serve ",
-    "build": "cross-env NODE_ENV=production npm-run-all -s clean:build parcel:build",
-    "ngrok:run": "ngrok start -config ngrok.yml website"
+    "build": "npm-run-all -s clean:build parcel:build",
+    "ngrok:run": "ngrok http %npm_package_config_port%"
   },
   "dependencies": {
     "tailwindcss": "^2.2.15"
@@ -31,6 +33,9 @@
     "autoprefixer": "^10.3.4",
     "browserslist": "^4.17.0",
     "cross-env": "^7.0.3",
+    "cross-var": "^1.1.0",
+    "dotenv": "^10.0.0",
+    "ngrok": "^4.2.2",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.0.0-rc.0",
     "postcss": "^8.3.6",
@@ -44,7 +49,6 @@
     "posthtml-doctype": "^1.1.1",
     "posthtml-expressions": "^1.9.0",
     "posthtml-include": "^1.7.1",
-    "posthtml-webp": "^2.1.0",
-    "ngrok": "^4.2.2"
+    "posthtml-webp": "^2.1.0"
   }
 }
