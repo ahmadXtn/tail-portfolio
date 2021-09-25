@@ -1,0 +1,19 @@
+authtoken: 1qltsa5gjAXxXUHBQ8TGcA5SAgS_2JQ7gwheYxr9pAsNedSS4
+region: us
+console_ui: true
+http_proxy: false
+inspect_db_size: 50000000
+log_level: info
+log_format: json
+root_cas: trusted
+update: false
+update_channel: stable
+web_addr: localhost:4040
+tunnels:
+  website:
+    addr: 1234
+    auth: admin:admin
+    bind_tls: true
+    host_header: "portfolio.dev"
+    inspect: true
+    proto: http

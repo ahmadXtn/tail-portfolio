@@ -17,11 +17,11 @@
   "scripts": {
     "clean": "npx rimraf -rf dist .parcel-cache",
     "clean:build": "npx rimraf -rf build",
-    "parcel:serve": "parcel serve ./src/index.html --no-cache -p %npm_package_config_port%",
+    "parcel:serve": "parcel serve ./src/index.html --no-cache -p 1234",
     "parcel:build": "parcel build ./src/index.html --dist-dir build",
     "start": "npm-run-all -s clean parcel:serve ",
     "build": "cross-env NODE_ENV=production npm-run-all -s clean:build parcel:build",
-    "ngrok:run": "ngrok http %npm_package_config_port%"
+    "ngrok:run": "ngrok start -config ngrok.yml website"
   },
   "dependencies": {
     "tailwindcss": "^2.2.15"
