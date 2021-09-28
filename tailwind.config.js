@@ -15,8 +15,18 @@ module.exports = {
 	variants: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [
+		require('daisyui'),
+	],
 	corePlugins: {
 		backgroundColor: true,
 	},
+	daisyui: {
+		styled: true,
+		themes: true,
+		base: true,
+		utils: true,
+		logs: true,
+		rtl: true,
+	}
 }

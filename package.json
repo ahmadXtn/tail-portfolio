@@ -26,6 +26,7 @@
     "ngrok:run": "ngrok http %npm_package_config_port%"
   },
   "dependencies": {
+    "daisyui": "^1.14.1",
     "tailwindcss": "^2.2.15"
   },
   "devDependencies": {
