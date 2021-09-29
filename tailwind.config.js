@@ -30,3 +30,4 @@ module.exports = {
 		rtl: true,
 	}
 }
+
